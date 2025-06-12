@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="A foundational React frontend template built with React and Tailwind CSS, offering a clean start for web app development."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Basic React Frontend Template</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            }
+          }
+        }
+      }
+    </script>
+    <!-- For development, using Tailwind JIT CDN, ensure this is replaced by a build step for production -->
+    <!-- Note: The script `https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4` was in the previous version. 
+         The official Tailwind docs recommend `https://cdn.tailwindcss.com` for play/dev CDN.
+         If a specific version or the browser build is needed, adjust accordingly.
+         The previous version's package.json had Tailwind, implying a build step.
+         For a simple template often a CDN is fine for initial setup.
+    -->
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+</html>
